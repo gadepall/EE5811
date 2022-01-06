@@ -1,0 +1,19 @@
+
+##Installing PlatfromIO
+pip3 install platformio
+
+svn co https://github.com/gadepall/termux/termux/pio/Projects/hello
+
+##Compling the Project
+cd hello
+
+%% BEFORE COMPILING
+
+pio run
+
+##This will also build firmware.bin in 
+.pio/build/esp32doit-devkit-v1/firmware.bin 
+
+#This will upload the bin file to the arduino
+pio run -t nobuild -t upload
+
