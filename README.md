@@ -1,16 +1,37 @@
 # EE5811
 FPGA LAB
-1.  Software Installation
-https://github.com/gadepall/EE5161/blob/main/ugv/install/base_install.txt
-2.  Boolean Algebra through C
+1. Installing Linux on phone
+
+All the instructions in this document are for using a phone for software
+development and the raspberry pi for hardware interfacing.  With some modification,
+the instructions should work for a laptop
+
+
+
+https://github.com/gadepall/termux/blob/main/installation/termux_beginner.txt
+
+2.  Installing Platformio
+
+https://github.com/gadepall/termux/blob/main/pio/installation.txt
+
+3.  Boolean Algebra through C
+
 svn co https://github.com/gadepall/ID130/trunk/manual
-3.  Arduino Framework
+
+4.  Arduino Framework
+
 svn co https://github.com/gadepall/arduino/trunk/ide
-4.  Arduino Assembly 
+
+5.  Arduino Assembly 
+
 https://github.com/gadepall/arduino/tree/master/assembly
-5.  AVR-GCC
+
+
+6.  AVR-GCC
+
 https://github.com/gadepall/arduino/tree/master/assembly
-6.  Vaman
+
+7.  Vaman
 https://github.com/gadepall/vaman
 
 
