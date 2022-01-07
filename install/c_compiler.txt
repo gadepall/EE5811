@@ -1,0 +1,29 @@
+#On laptop/rpi
+
+#Install packages on ubuntu/debian
+
+apt install build-essential git silversearcher-ag wget openssh subversion imagemagick neovim nano python mutt nmap -y
+
+svn co https://github.com/gadepall/ID130/trunk/manual
+
+#On phone 
+##Install fdroid apk from
+https://www.f-droid.org/
+
+##Open fdroid on your mobile and install termux from it
+##Download & Installing Ubuntu in Termux App and Important Packages. 
+apt update && apt upgrade -y
+apt install build-essential git silversearcher-ag wget openssh subversion imagemagick proot nano python bsdtar mutt nmap proot-distro -y
+apt update
+
+##Login into Ubuntu
+proot-distro install ubuntu
+##Login into Ubuntu
+proot-distro login ubuntu
+
+##Update & Upgrade Ubuntu And Download Mandatory Packages
+apt update && apt upgrade -y
+apt install build-essential -y
+apt install git wget subversion imagemagick nano neovim python3-pip python3-numpy python3-scipy python3-matplotlib python3-mpmath python3-sympy python3-cvxopt -y
+
+svn co https://github.com/gadepall/ID130/trunk/manual

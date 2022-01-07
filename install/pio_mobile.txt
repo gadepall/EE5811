@@ -1,0 +1,25 @@
+
+##Installing PlatfromIO on Ubuntu and Downloading Arduino Project 
+pip3 install platformio
+svn co https://github.com/gadepall/termux/termux/pio/Projects/hello
+
+##Compling the Project
+cd hello
+pio run
+
+##On Your RaspberryPi
+##Installing PlatfromIO, Making Directory To Store firmware.bin & Download PlatformIO Config File
+
+pip3 install platformio
+mkdir -p ~/hello/.pio/build/esp32doit-devkit-v1/
+wget https://raw.githubusercontent.com/gadepall/termux/main/pio/Projects/hello/platformio.ini
+
+##On Your Phone Termux
+##Copy firmware.bin to RaspberryPi (Change the IPAddress in Command)
+scp .pio/build/esp32doit-devkit-v1/firmware.bin pi@192.168.1.6:/home/pi/esp-ugv/.pio/build/esp32doit-devkit-v1/
+
+##Installing into Arduino
+cd /home/pi/hello/
+
+pio run -t nobuild -t upload
+
