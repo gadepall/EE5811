@@ -16,6 +16,7 @@ https://github.com/gadepall/termux/blob/main/pio/installation.txt
 
 3.  Boolean Algebra through C
 
+https://github.com/gadepall/ID130/blob/main/manual/gvv_digman.pdf
 svn co https://github.com/gadepall/ID130/trunk/manual
 
 4.  Arduino Framework
