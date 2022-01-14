@@ -21,6 +21,7 @@ svn co https://github.com/gadepall/ID130/trunk/manual
 
 4.  Arduino Framework
 
+https://github.com/gadepall/arduino/blob/master/ide/kmap/gvv_kmap.pdf
 svn co https://github.com/gadepall/arduino/trunk/ide
 
 5.  Arduino Assembly 
