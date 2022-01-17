@@ -1,0 +1,133 @@
+
+%\renewcommand{\theequation}{\thesection}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{figure}{section}
+
+%\setcounter{figure}{0}
+%\numberwithin{table}{section}
+%\numberwithin{equation}{section}
+%\renewcommand{\thefigure}{\thesection}
+%\numberwithin{figure}{section}
+\item सारणी  \ref{table:counter_decoder} में 0 संख्याओं  की  क-मानचित्र. \ref{fig:kmap_A_pos}-\ref{fig:kmap_D_pos}  में संयुक्ति से निम्न योग-गुणन व्यंजक उपलब्ध होते हैं ।  पूर्व खंडों में समस्त बूलीय फलन के-मानचित्र में 1 अंकों के संयोग  से फलन गुणन-योग रूप में प्राप्त हुए थे.
+%
+\begin{align}
+\label{eq:kmap_A_pos}
+A&=(Z^{\prime}+Y^{\prime})W^{\prime}(Z^{\prime}+X^{\prime})
+\\
+\label{eq:kmap_B_pos}
+    B&=(X^{\prime}+W^{\prime})Z^{\prime}(X+W)
+\\
+\label{eq:kmap_C_pos}
+     C&=(Z+Y+X)(Y^{\prime}+X^{\prime}+W^{\prime})(X^{\prime}+Y+W)Z^{\prime}
+\\
+     D&=(Z+Y)(Y^{\prime}+X)(X+W^{\prime})(X^{\prime}+W)(Z^{\prime}+X^{\prime})
+\label{eq:kmap_D_pos}
+\end{align}
+%
+
+
+
+\begin{figure}[!h]
+\centering
+\resizebox{\columnwidth}{!}
+{
+\begin{karnaugh-map}[4][4][1][][]
+    \maxterms{1,3,5,7,9,10,11,12, 13 ,14,15}
+    \minterms{0,2,4,8}
+    \implicant{12}{14}
+    \implicant{1}{11}
+    \implicant{15}{10}
+    % note: position for start of \draw is (0, Y) where Y is
+    % the Y size(number of cells high) in this case Y=2
+    \draw[color=black, ultra thin] (0, 4) --
+    node [pos=0.7, above right, anchor=south west] {$XW$} % YOU CAN CHANGE NAME OF VAR HERE, THE $X$ IS USED FOR ITALICS
+    node [pos=0.7, below left, anchor=north east] {$ZY$} % SAME FOR THIS
+    ++(135:1);
+        
+    \end{karnaugh-map}
+}
+\caption{$A$ का योग-गुणन}
+\label{fig:kmap_A_pos}
+\end{figure}
+
+
+\begin{figure}[!h]
+\centering
+\resizebox{\columnwidth}{!}
+{
+\begin{karnaugh-map}[4][4][1][][]
+    \minterms{1,2,5,6}
+    \maxterms{0,3,4,7,8,9,10,11,12,13,14,15}
+    \implicant{12}{10}
+    \implicant{3}{11}
+    \implicant{0}{8}
+    % note: position for start of \draw is (0, Y) where Y is
+    % the Y size(number of cells high) in this case Y=2
+    \draw[color=black, ultra thin] (0,4) --
+    node [pos=0.7, above right, anchor=south west] {$XW$} % YOU CAN CHANGE NAME OF VAR HERE, THE $X$ IS USED FOR ITALICS
+    node [pos=0.7, below left, anchor=north east] {$ZY$} % SAME FOR THIS
+    ++(135:1);
+        
+    \end{karnaugh-map}
+}
+\caption{$B$ का योग-गुणन}
+\label{fig:kmap_B_pos}
+\end{figure}
+    
+
+\begin{figure}[!h]
+\centering
+\resizebox{\columnwidth}{!}
+{
+\begin{karnaugh-map}[4][4][1][][]
+    \minterms{3,4,5,6}
+    \maxterms{0,1,2,7,8,9,10,11,12,13,14,15}
+    \implicant{12}{10}
+    \implicant{0}{1}
+    \implicant{15}{7}
+    \implicantcorner
+    
+    % note: position for start of \draw is (0, Y) where Y is
+    % the Y size(number of cells high) in this case Y=2
+    \draw[color=black, ultra thin] (0, 4) --
+    node [pos=0.7, above right, anchor=south west] {$XW$} % YOU CAN CHANGE NAME OF VAR HERE, THE $X$ IS USED FOR ITALICS
+    node [pos=0.7, below left, anchor=north east] {$ZY$} % SAME FOR THIS
+    ++(135:1);
+        
+    \end{karnaugh-map}
+}
+\caption{$C$ का योग-गुणन}
+\label{fig:kmap_C_pos}
+\end{figure}
+
+     
+\begin{figure}[!h]
+\centering
+\resizebox{\columnwidth}{!}
+{
+\begin{karnaugh-map}[4][4][1][][]
+    \maxterms{0,1,2,3,4,5,6,9,10,11,12,13,14,15}
+    \minterms{7,8}
+    \implicant{15}{10}
+    \implicant{2}{10}
+    \implicant{0}{2}
+    \implicant{4}{13}
+    \implicant{1}{9}
+    % note: position for start of \draw is (0, Y) where Y is
+    % the Y size(number of cells high) in this case Y=2
+    \draw[color=black, ultra thin] (0, 4) --
+    node [pos=0.7, above right, anchor=south west] {$XW$} % YOU CAN CHANGE NAME OF VAR HERE, THE $X$ IS USED FOR ITALICS
+    node [pos=0.7, below left, anchor=north east] {$ZY$} % SAME FOR THIS
+    ++(135:1);
+        
+    \end{karnaugh-map}
+}
+\caption{$D$ का योग-गुणन}
+\label{fig:kmap_D_pos}
+\end{figure}
+
+\item  सारणी  \ref{table:disp_decoder} में 0 संख्याओं  की  क-मानचित्र में संयुक्ति से योग-गुणन व्यंजक उपलब्ध करें।
+\end{enumerate}

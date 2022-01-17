@@ -1,0 +1,53 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item Using Boolean logic, outputs $a,b,c,d,e,f,g$  in Table \ref{table:disp_dec} can be expressed in terms of the inputs $A,B,C,D$ as
+%
+\begin{align}
+\label{eq:disp_a}
+a &=
+\\
+\label{eq:disp_b}
+b &= AB^{\prime}CD^{\prime}+A^{\prime}BCD^{\prime}
+\\
+\label{eq:disp_c}
+c &= {D}^{\prime}{C}^{\prime}B{A}^{\prime}
+\\
+d &= 
+\label{eq:disp_d}
+\\
+e &= 
+\label{eq:disp_e}
+\\
+f &= 
+\label{eq:disp_f}
+\\
+g &= 
+\label{eq:disp_g}
+\end{align}
+\begin{table}
+\centering
+\input{./tables/disp_dec.tex}
+\caption{Truth table for display decoder.}
+\label{table:disp_dec}
+\end{table}
+
+\item Execute the following code for different input values to verify 
+\eqref{eq:disp_a}-\eqref{eq:disp_g}.
+\label{code:disp_decode}
+\begin{lstlisting}
+codes/disp_decode.c
+\end{lstlisting}
+%\item Modify the above C code to verify \eqref{eq:disp_A}, \eqref{eq:disp_B}
+%and \eqref{eq:disp_C}.
+%
+%\item Repeat the exercise for the truth table in .
+%
+
+\end{enumerate}
+%
+%

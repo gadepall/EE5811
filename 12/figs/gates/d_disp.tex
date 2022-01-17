@@ -1,0 +1,69 @@
+\tikzstyle{branch}=[fill,shape=circle,minimum size=3pt,inner sep=0pt]
+\begin{tikzpicture}[label distance=2mm]
+    \node (x1) at (0,0) {$A$};
+    \node (x2) at (0,-1.72) {$B$};
+    \node (x3) at (0,-4) {$C$};
+    \node (x4) at (0,-5.5) {$D$};
+    
+    \node[and gate US, draw, logic gate inputs=nnnnnnn] at ($(x1)+(4,-1.65)$) (And1) {};
+    \node[and gate US, draw, logic gate inputs=nnnnnnnnn] at ($(x3)+(4,-1)$) (And2) {};
+    \node[and gate US, draw, logic gate inputs=nnnnnnnnn] at ($(x4)+(4,-2)$) (And3) {};
+    
+    \node[or gate US, draw, logic gate inputs=nnnnnnn, anchor=input 1] at ($(And2.output)+(5,0.5)$) (Or1) {};
+    
+ \draw (x1)--(2.5,0) 
+   (2.5,0)--(2.5,-1.3) 
+   (2.5,-1.3)--(And1.input 2)
+   (x2)--(3.1,-1.64) 
+   (3.17,-1.68) node[american] {o}
+   (x3)--(2.5,-4) 
+   (2.5,-4)--(2.5,-2) 
+   (2.5,-2)--(3.14,-2) 
+   (3.17,-2)node[american] {o}
+   (And1.output)--(8,-1.64)
+ 
+  
+   (2.2,0)node[american] {o}   
+   (2.2,0)--(2.2,-4.5)
+   (2.2,-4.5)--(And2.input 2)
+   (2.95,-4.5)node[american] {o}
+   (1.6,-1.68)node[american] {o}
+   (1.6,-1.68)--(1.6,-4.8)
+   (1.6,-4.8)--(And2.input 4)
+    (2.95,-4.8)node[american] {o}
+    (1,-4)node[american] {o}
+    (1,-4)--(1,-5.2)
+    (1,-5.2)--(And2.input 6)
+    (x4)--(And2.input 8)
+     (2.95,-5.5)node[american] {o}
+      (And2.output)--(Or1.input 4)
+      
+      
+      
+     (2.2,-4.5)--(2.2,-7)
+     (2.2,-4.5)node[american] {o}
+     (2.2,-7)--(And3.input 2)
+     (1.6,-4.8)--(1.6,-7.3)
+     (1.6,-7.3)--(And3.input 4)
+     (1.6,-4.8)node[american] {o}
+     (1,-5.2)--(1,-7.65)
+    (1,-5.2)node[american] {o}
+    (1,-7.65)--(And3.input 6)
+    (0.6,-5.5)--(0.6,-8)
+    (0.6,-8)--(And3.input 8)
+    (0.6,-5.5)node[american] {o}
+    (2.95,-8)node[american] {o}
+    (And3.output)--(8,-7.45)
+    
+    
+    (8,-1.64)--(8,-4.7)
+    (8,-4.7)--(Or1.input 2)
+    (8,-7.45)--(8,-5.35)
+    (8,-5.35)--(Or1.input 6)
+    (Or1.output)--(13,-5)
+     (6,-1.3)node[american] {$AB'C'$}
+      (6,-4.5)node[american] {$A'B'CD'$}
+       (6,-7)node[american] {$ABCD'$}
+     (13,-4)node[american] {$AB'C'+A'B'CD'+ABCD'= d$};
+     
+\end{tikzpicture}

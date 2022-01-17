@@ -1,0 +1,22 @@
+\begin{karnaugh-map}[4][4][1][][]
+%\manualterms{0,0,0,1,1,1,1,0,0,0,X,X,X,X,X,X}
+
+    \maxterms{0,1,2,7,8,9}
+    \minterms{3,4,5,6}
+\terms{10,11,12,13,14,15}{X}
+    
+    
+     \implicantedge{3}{3}{11}{11}
+    \implicantedge{12}{13}{4}{5}
+     \implicantedge{4}{12}{6}{14}
+     
+    
+    % note: posistion for start of \draw is (0, Y) where Y is
+    % the Y size(number of cells high) in this case Y=2
+    \draw[color=black, ultra thin] (0, 4) --
+    node [pos=0.7, above right, anchor=south west] {$XW$} % Y label
+    node [pos=0.7, below left, anchor=north east] {$ZY$} % X label
+    ++(135:1);
+        
+    \end{karnaugh-map}
+

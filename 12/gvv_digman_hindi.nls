@@ -1,0 +1,48 @@
+
+\begin{thenomenclature} 
+\nomgroup{A}
+  \item [{Axiom}]\begingroup  अभिगृह\nomeqref {0.0.0}\nompageref{1}
+  \item [{Binary}]\begingroup  द्विआधारी\nomeqref {0.0.0}\nompageref{1}
+  \item [{Block Diagram}]\begingroup खण्डारेख\nomeqref {0.0.0}\nompageref{1}
+  \item [{Boolean Algebra}]\begingroup  बूलीय बीजगणित\nomeqref {0.0.0}\nompageref{1}
+  \item [{C Program}]\begingroup  C क्रमादेश\nomeqref {0.0.0}\nompageref{1}
+  \item [{Circuit}]\begingroup परिपथ\nomeqref {0.0.0}\nompageref{1}
+  \item [{Code}]\begingroup  गूढ़\nomeqref {0.0.0}\nompageref{1}
+  \item [{Combinational Logic}]\begingroup  संयोजक तर्क\nomeqref {0.0.0}\nompageref{1}
+  \item [{Complement}]\begingroup पूरक\nomeqref {0.0.0}\nompageref{1}
+  \item [{Decade Counter}]\begingroup दशक गणित्र\nomeqref {0.0.0}\nompageref{1}
+  \item [{Decoder}]\begingroup  गूढ़वाचक\nomeqref {0.0.0}\nompageref{1}
+  \item [{Decrementing}]\begingroup  पूर्ववर्ती\nomeqref {0.0.0}\nompageref{1}
+  \item [{Delay}]\begingroup अतिकाल\nomeqref {0.0.0}\nompageref{1}
+  \item [{Derive}]\begingroup व्युत्पन्न \nomeqref {0.0.0}\nompageref{1}
+  \item [{Design}]\begingroup अभिकल्प\nomeqref {0.0.0}\nompageref{1}
+  \item [{Digital Logic}]\begingroup अंकीय तर्क\nomeqref {0.0.0}\nompageref{1}
+  \item [{Equation}]\begingroup  समीकरण\nomeqref {0.0.0}\nompageref{1}
+  \item [{Execute}]\begingroup  निष्पादित\nomeqref {0.0.0}\nompageref{1}
+  \item [{Expression}]\begingroup  व्यंजक\nomeqref {0.0.0}\nompageref{1}
+  \item [{Figure}]\begingroup  आकृति\nomeqref {0.0.0}\nompageref{1}
+  \item [{Finite State Machine}]\begingroup परिमित अवस्था यंत्र\nomeqref {0.0.0}\nompageref{1}
+  \item [{Flip flop}]\begingroup द्विविध\nomeqref {0.0.0}\nompageref{1}
+  \item [{Function}]\begingroup फलन\nomeqref {0.0.0}\nompageref{1}
+  \item [{Hardware}]\begingroup यंत्रोपवस्तु\nomeqref {0.0.0}\nompageref{1}
+  \item [{Implementation}]\begingroup कार्यान्वयन\nomeqref {0.0.0}\nompageref{1}
+  \item [{Implicant}]\begingroup  विवक्षक\nomeqref {0.0.0}\nompageref{1}
+  \item [{Incrementing}]\begingroup  परवर्ती\nomeqref {0.0.0}\nompageref{1}
+  \item [{Input}]\begingroup  आगत\nomeqref {0.0.0}\nompageref{1}
+  \item [{Karnaugh Map}]\begingroup  कार्नो मानचित्र\nomeqref {0.0.0}\nompageref{1}
+  \item [{LED}]\begingroup  प्रकाश उत्सर्जक यंत्र\nomeqref {0.0.0}\nompageref{1}
+  \item [{Minimize}]\begingroup  कनिष्ठीकरण\nomeqref {0.0.0}\nompageref{1}
+  \item [{Output}]\begingroup  निर्गत\nomeqref {0.0.0}\nompageref{1}
+  \item [{Period}]\begingroup आवर्त\nomeqref {0.0.0}\nompageref{1}
+  \item [{Reduced}]\begingroup  समानयनिक\nomeqref {0.0.0}\nompageref{1}
+  \item [{Seven Segment Display}]\begingroup  सप्तांश प्रदर्शी\nomeqref {0.0.0}\nompageref{1}
+  \item [{Simplified Expression}]\begingroup सरलीकृत व्यंजक\nomeqref {0.0.0}\nompageref{1}
+  \item [{State Transition Table}]\begingroup अवस्थान्तरण सारणी\nomeqref {0.0.0}\nompageref{1}
+  \item [{Synchronous}]\begingroup तुल्यकालिक\nomeqref {0.0.0}\nompageref{1}
+  \item [{Table}]\begingroup  सारणी\nomeqref {0.0.0}\nompageref{1}
+  \item [{Truth Table}]\begingroup सत्य सारणी\nomeqref {0.0.0}\nompageref{1}
+  \item [{Variable}]\begingroup  चर\nomeqref {0.0.0}\nompageref{1}
+  \item [{Verify}]\begingroup  सत्यापित\nomeqref {0.0.0}\nompageref{1}
+  \item [{XOR}]\begingroup अर्ध योग\nomeqref {0.0.0}\nompageref{1}
+
+\end{thenomenclature}

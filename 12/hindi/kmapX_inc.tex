@@ -1,0 +1,87 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item आकृति \ref{fig:inc_kmapX_A} के द्वारा $A$ के व्यंजक को व्युत्पन्न करें।
+
+\solution
+
+\begin{align}
+\label{eq:kmapX_disp_A}
+A &= W^{\prime}
+\end{align}
+%
+
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/inc/kmapX/A.tex}
+}
+\caption{$A$ का निर्गुण विवक्षक कृत क-मानचित्र।}
+\label{fig:inc_kmapX_A}
+\end{figure}
+%
+
+\item आकृति \ref{fig:inc_kmapX_B} के द्वारा $B$ के व्यंजक को व्युत्पन्न करें।
+
+\solution
+
+\begin{align}
+\label{eq:kmapX_disp_B}
+B &= WX^{\prime}Z^{\prime}+W^{\prime}X
+\end{align}
+%
+
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/inc/kmapX/B.tex}
+}
+\caption{$B$ का निर्गुण विवक्षक कृत क-मानचित्र।}
+\label{fig:inc_kmapX_B}
+\end{figure}
+%
+\item आकृति \ref{fig:inc_kmapX_C} के द्वारा $C$ के व्यंजक को व्युत्पन्न करें।
+
+\solution
+
+\begin{align}
+\label{eq:kmapX_disp_C}
+C &= X^{\prime}Y+W^{\prime}Y++WXY^{\prime}
+\end{align}
+%
+
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/inc/kmapX/C.tex}
+}
+\caption{$C$ का निर्गुण विवक्षक कृत क-मानचित्र।}
+\label{fig:inc_kmapX_C}
+\end{figure}
+%
+%
+\item आकृति \ref{fig:inc_kmapX_D} के द्वारा $D$ के व्यंजक को व्युत्पन्न करें।
+
+\solution
+
+\begin{align}
+\label{eq:kmapX_disp_D}
+D &= WXY+W^{\prime}Z
+\end{align}
+%
+
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/inc/kmapX/D.tex}
+}
+\caption{$D$ का निर्गुण विवक्षक कृत क-मानचित्र।}
+\label{fig:inc_kmapX_D}
+\end{figure}
+%
+
+\end{enumerate}

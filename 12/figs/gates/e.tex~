@@ -1,0 +1,47 @@
+\begin{tikzpicture}[label distance=5mm]
+
+    \node (x3) at (0,0) {$A$};
+    \node (x2) at (1,0) {$D$};
+    \node (x1) at (2,0) {$B$};
+    \node (x0) at (3,0) {$C$};
+
+    \node[not gate US, draw, rotate=-90] at ($(x2)+(0,-1)$) (Not2) {};
+    \node[not gate US, draw, rotate=-90] at ($(x1)+(0,-1)$) (Not1) {};
+    \node[not gate US, draw, rotate=-90] at ($(x0)+(0.5,-1)$) (Not0) {};
+
+    \node[and gate US, draw, logic gate inputs=nnnn] at ($(x0)+(2,-2)$) (Or1) {};
+    \node[and gate US, draw, logic gate inputs=nnnn] at ($(Or1)+(0,-1)$) (Or2) {};
+    \node[and gate US, draw, logic gate inputs=nnnn
+] at ($(Or2)+(0,-1)$) (Or3) {};
+  
+     \node[or gate US, draw, logic gate inputs=nnnn, anchor=input 1,2,3] at ($(Or1.output)+(1,0)$) (And1) {};
+     
+    \draw(0,-0.2)--(0,-1.7)--(4.5,-1.7);
+    \draw(1,-0.2)--(1,-0.5);
+    \draw(1,-1.4)--(1,-2.2)--(4.5,-2.2);
+   \draw(0,-1.7)--(0,-3)--(4.5,-3);
+   \draw(2,-0.2)--(2,-0.5);
+   \draw(2,-1.4)--(2,-2.7)--(4.5,-2.7);
+   \draw(3,-0.2)--(3,-0.49);
+   \draw(3.5,-1.4)--(3.5,-3.3)--(4.5,-3.3);
+   \draw(2,-2.7)--(2,-4)--(4.5,-4);
+   \draw(3,-0.49)--(3,-3.7)--(4.5,-3.7);
+   \draw(1,-2.2)--(1,-4.3)--(4.5,-4.3);
+   \draw(5.6,-2)--(6.6,-2);
+   \draw(5.6,-3)--(6,-3)--(6,-2.3)--(6.6,-2.3);
+   \draw(5.6,-4)--(6.2,-4)--(6.2,-2.5)--(6.6,-2.5);
+   \draw(7.64,-2.25)--(8.5,-2.25);
+ 
+   
+   
+   
+
+    \foreach \i in {2,1,0}
+    {
+        \path (x\i) -- coordinate (punt\i) (x\i |- Not\i.input);
+        \draw (punt\i) node[branch] {} -| (Not\i.input);
+    }
+   
+
+\end{tikzpicture}
+

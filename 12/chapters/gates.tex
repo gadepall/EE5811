@@ -1,0 +1,76 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item The following equation is implemented using gates in Fig. \ref{fig:gates_B}
+\begin{align}
+B=W^{\prime}X+WX^{\prime}Z^{\prime}
+\end{align}
+\begin{figure}[!ht]
+\begin{center}
+\resizebox {\columnwidth} {!} {
+\input{./figs/gates/B.tex}
+}
+\end{center}
+\caption{}
+\label{fig:gates_B}
+\end{figure}
+\item The following equation is implemented using gates in Fig. \ref{fig:gates_b}
+\begin{align}
+b=B^{\prime}+CD+C^{\prime}D^{\prime}
+\end{align}
+\begin{figure}[!ht]
+\begin{center}
+\resizebox {\columnwidth} {!} {
+\input{./figs/gates/b_disp.tex}
+}
+\end{center}
+\caption{}
+\label{fig:gates_b}
+\end{figure}
+\item The following equation is implemented using gates in Fig. \ref{fig:gates_a}
+\begin{align}
+    a=B^{\prime}D^{\prime}(A^{\prime}C+AC^{\prime})
+\end{align}
+\begin{figure}[!ht]
+\begin{center}
+\resizebox {\columnwidth} {!} {
+\input{./figs/gates/a_disp.tex}
+}
+\end{center}
+\caption{}
+\label{fig:gates_a}
+\end{figure}
+%
+\item The following equation is implemented using gates in Fig. \ref{fig:gates_d}
+\begin{align}
+d = AB^{\prime}C^{\prime}+A^{\prime}B^{\prime}CD^{\prime}+ABCD^{\prime}
+\end{align}
+\begin{figure}[!ht]
+\begin{center}
+\resizebox {\columnwidth} {!} {
+\input{./figs/gates/d_disp.tex}
+}
+\end{center}
+\caption{}
+\label{fig:gates_d}
+\end{figure}
+%
+%\item The following equation is implemented using gates in Fig. \ref{fig:gates_e}
+%\begin{align}
+%%
+%e = AD^{\prime}+AB^{\prime}C^{\prime}+B^{\prime}CD^{\prime}
+%\end{align}
+%\begin{figure}[!ht]
+%\begin{center}
+%\resizebox {\columnwidth} {!} {
+%\input{./figs/gates/e_disp.tex}
+%}
+%\end{center}
+%\caption{}
+%\label{fig:gates_e}
+%\end{figure}
+\end{enumerate}

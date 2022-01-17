@@ -1,0 +1,16 @@
+\contentsline {section}{\nonumberline नामकरण}{1}{section*.2}%
+\contentsline {section}{\numberline {1}सप्तांश प्रदर्शी }{1}{section.1}%
+\contentsline {section}{\numberline {2}परवर्ती गूढ़वाचक}{2}{section.2}%
+\contentsline {section}{\numberline {3}प्रदर्शी गूढ़वाचक}{3}{section.3}%
+\contentsline {section}{\numberline {4}कार्नो मानचित्र}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}परवर्ती गूढ़वाचक}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}प्रदर्शी गूढ़वाचक}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}निर्गुण अवस्था}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}परवर्ती गूढ़वाचक}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}प्रदर्शी गूढ़वाचक}{7}{subsection.5.2}%
+\contentsline {section}{\numberline {6}तर्क द्वार}{9}{section.6}%
+\contentsline {section}{\numberline {7}योग-गुणन}{10}{section.7}%
+\contentsline {section}{\numberline {8}दशक गणित्र}{10}{section.8}%
+\contentsline {subsection}{\numberline {8.1}प्रस्तावना}{10}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}परिमित अवस्था यंत्र}{10}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}परिमित अवस्था यंत्र के द्वारा दशक गणित्र का अभिकल्प}{11}{subsection.8.3}%

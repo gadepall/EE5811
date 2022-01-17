@@ -1,0 +1,55 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item   निम्न समीकरण में  सारणी \ref{table:disp_dec}  के निर्गत चर  $a,b,c,d,e,f,g$ की अभिव्यक्ति आगत चर $A,B,C,D$ के द्वारा की गयी है
+%
+\begin{align}
+\label{eq:disp_a}
+a &= AB^{\prime}C^{\prime}D^{\prime}+A^{\prime}B^{\prime}CD^{\prime}
+\\
+\label{eq:disp_b}
+b &= AB^{\prime}CD^{\prime}+A^{\prime}BCD^{\prime}
+\\
+\label{eq:disp_c}
+c &= {D}^{\prime}{C}^{\prime}B{A}^{\prime}
+\\
+d &= AB^{\prime}C^{\prime}D^{\prime}+A^{\prime}B^{\prime}CD^{\prime}+ABCD^{\prime}+AB^{\prime}C^{\prime}D
+\label{eq:disp_d}
+\\
+e &= AB^{\prime}C^{\prime}D^{\prime}+ABC^{\prime}D^{\prime}+A^{\prime}B^{\prime}CD^{\prime}+AB^{\prime}CD^{\prime}
+\nonumber \\
+&\quad +ABCD^{\prime}+AB^{\prime}C^{\prime}D
+\label{eq:disp_e}
+\\
+f &= AB^{\prime}C^{\prime}D^{\prime}+A^{\prime}BC^{\prime}D^{\prime}+ABC^{\prime}D^{\prime}+ABCD^{\prime}
+\label{eq:disp_f}
+\\
+g &= A^{\prime}B^{\prime}C^{\prime}D^{\prime}+AB^{\prime}C^{\prime}D^{\prime}+ABCD^{\prime}
+\label{eq:disp_g}
+\end{align}
+\begin{table}
+\centering
+\input{./tables/disp_dec.tex}
+\caption{प्रदर्शी गूढ़वाचक की सत्य सारिणी ।}
+\label{table:disp_dec}
+\end{table}
+
+\item निम्न गूढ़ को भिन्न भिन्न आगत मूल्यों के लिये निष्पादित कर \eqref{eq:disp_a}-\eqref{eq:disp_g} को सत्यापित करें ।
+
+\label{code:disp_decode}
+\begin{lstlisting}
+codes/disp_decode.c
+\end{lstlisting}
+%\item Modify the above C code to verify \eqref{eq:disp_A}, \eqref{eq:disp_B}
+%and \eqref{eq:disp_C}.
+%
+%\item Repeat the exercise for the truth table in .
+%
+
+\end{enumerate}
+%
+%

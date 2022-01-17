@@ -1,0 +1,120 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item $A$ का क-मानचित्र: 
+\eqref{eq:inc_A}  में प्रदत्त व्यंजक के कनिष्ठ मान  की गणना आकृति \ref{fig:kmap_A} में  उपलब्ध क-मानचित्र  से संभव है ।
+आकृति \ref{fig:kmap_A}  में कोष्ठ 0,2,4,6 के विवक्ष से व्यंजक $W^{\prime}Z^{\prime}$ प्राप्त होता है एवं  कोष्ठ 0,8 के विवक्ष से $W^{\prime}X^{\prime}Y^{\prime}$.  अतः, आकृति. \ref{eq:kmap_A},  \eqref{eq:inc_A} की सहायता से कनिष्ठीकरण के पश्चात निम्न समीकरण प्राप्त होता है
+%
+\begin{equation}
+\label{eq:kmap_A}
+A = W^{\prime}Z^{\prime}+W^{\prime}X^{\prime}Y^{\prime} ।
+\end{equation}
+%
+\item  \ref{eq:inc_Boolean}  एवं \eqref{eq:inc_A} के द्वारा
+%
+\eqref{eq:kmap_A} को  बूलीय बीजगणित से  प्राप्त करें ।
+%
+%
+%
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/inc/kmap/kmap_A}
+}
+\caption{$A$ का क-मानचित्र ।}
+\label{fig:kmap_A}
+\end{figure}
+%\item आकृती \ref{fig:kmap_A} में सत्य शब्द 
+\item आकृती \ref{fig:kmap} के द्वारा  $A$ के विवक्षकों की क-मानचित्र में स्थितिबद्धता का अनुमान लगाया जा सकता है ।
+%
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/kmap}
+}
+\caption{क-मानचित्र का विश्लेषण ।}
+\label{fig:kmap}
+\end{figure}
+
+\item $B$ का क-मानचित्र :
+सारणी \ref{table:counter_decoder} एवं बूलीय तर्क से,
+%
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/inc/kmap/kmap_B}
+}
+\caption{$B$ का क-मानचित्र ।}
+\label{fig:kmap_B}
+\end{figure}
+%
+आकृति \ref{fig:kmap_B} के द्वारा दर्शायें कि \eqref{eq:inc_B} का समानायनिक रूप
+\begin{equation}
+\label{eq:kmap_B}
+B = WX^{\prime}Z^{\prime} + W^{\prime}XZ^{\prime}
+\end{equation}
+है ।
+\item बूलीय  बीजगणित विधि एवं  \eqref{eq:inc_Boolean} के द्वारा \eqref{eq:inc_B} से  \eqref{eq:kmap_B} को प्राप्त करें ।
+%
+%
+\item {$C$ का क-मानचित्र : }
+बूलीय तर्क, आकृति \ref{fig:kmap_C}  एवं  सारणी \ref{table:counter_decoder} के द्वारा
+%
+%
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/inc/kmap/kmap_C}
+}
+\caption{$C$ का क-मानचित्र । }
+\label{fig:kmap_C}
+\end{figure}
+%
+दर्शायें कि  \eqref{eq:inc_C} का समानायनिक रूप 
+\begin{equation}
+\label{eq:kmap_C}
+C = WXY^{\prime}Z^{\prime}  +  X^{\prime}YZ^{\prime} + W^{\prime}YZ^{\prime}
+\end{equation}
+है ।
+%
+\item 
+बूलीय  बीजगणित विधि एवं \eqref{eq:inc_Boolean} के द्वारा  \eqref{eq:kmap_C} से \eqref{eq:inc_C} प्राप्त करें ।
+%
+\item {$D$ का क-मानचित्र ।}
+बूलीय  तर्क एवं  सारणी \ref{table:counter_decoder}, से निम्न समीकरण प्राप्त होता है
+\begin{equation}
+\label{eq:kmap_D}
+D = WXYZ^{\prime} + W^{\prime}X^{\prime}Y^{\prime}Z
+\end{equation}
+%
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/inc/kmap/kmap_D}
+}
+\caption{$D$ का क-मानचित्र }
+\label{fig:kmap_D}
+\end{figure}
+%
+\item 
+आकृति \ref{fig:kmap_D}  से  \eqref{eq:kmap_D} को प्राप्त करें।
+%
+\item \ref{code:inc_decode} में उल्लेख C प्रोग्रामन को संशोधित कर  
+%Download the code in
+%\begin{lstlisting}
+%wget https://raw.githubusercontent.com/gadepall/arduino/master/7447/codes/inc_dec/inc_dec.ino
+%\end{lstlisting}
+%
+%and modify it using 
+क-मानचित्र द्वारा उपलब्ध  A,B,C एवं D के समीकरण \eqref{eq:kmap_A}, \eqref{eq:kmap_B}, \eqref{eq:kmap_C}
+एवं \eqref{eq:kmap_D} को सत्यापित करें ।
+%Execute and verify.
+%\item Revise by using don't care conditions and verify through a C code.
+%\item {Display Decoder:}
+%%is the truth सारणी for the display decoder in Fig. \ref{fig:dec_counter}.  
+%Use क-मानचित्रs to obtain the minimized expressions for $a,b,c,d,e,f,g$ in terms of $A,B,C,D$ in सारणी \ref{सारणी:disp_dec} 
+%with and without don't care conditions.
+%%
+%\input{./figs/disp_dec}
+\end{enumerate}
+%
+%

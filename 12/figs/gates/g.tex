@@ -1,0 +1,44 @@
+\tikzstyle{branch}=[fill,shape=circle,minimum size=3pt,inner sep=0pt]
+\begin{tikzpicture}[label distance=5mm]
+
+     \node (x3) at (0,0) {$D$};
+     \node (x2) at (-3,1) {$C$};
+     \node (x1) at (-2,2) {$B$};
+     \node (x0) at (0,-4) {$D$};   
+     \node (x4) at (-1,-3) {$A$};   
+     \node[not gate US, draw, rotate=0] at ($(x3)+(-1,1)$) (Not1) {};
+ 
+     \node[not gate US, draw, rotate=0] at ($(x2)+(2,1)$) (Not2) {};
+
+     \node[not gate US, draw, rotate=0] at ($(x0)+(2,0)$) (Not3) {};
+     
+     
+     \node[or gate US, draw, logic gate inputs=nn] at ($(x3)+(8,0)$) (Or1) {};
+     \node[and gate US, draw, logic gate inputs=nnn] at ($(5,1)$) (And1) {};
+     \node[and gate US, draw, logic gate inputs=nnnn] at ($(5,-2.5)$) (And2) {};
+
+     \draw (x3) |- (And1.input 3);
+     \draw (x4) |- (And2.input 3);
+     \draw (Not1.output) |- (And1.input 2);
+     \draw (Not2.output) |- (And1.input 1);
+     \draw (Not3.output) |- (And2.input 4);
+     \draw (x1) |- (Not2.input);
+     \draw (x2) |- (Not1.input);   
+     \draw (x0) |- (Not3.input);  
+     \draw (And1.output) |- (Or1.input 1);
+     \draw (And2.output) |- (Or1.input 2);
+     \draw (x2) |- (And2.input 2) node[branch] {} -- (And2.input 2);
+     \draw (x1) |- (And2.input 1) node[branch] {} -- (And2.input 1);
+
+
+
+
+
+
+
+
+
+
+
+\end{tikzpicture}
+

@@ -1,0 +1,66 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item The incrementing decoder   takes the numbers $0,1,\dots,9$ in binary as inputs and generates
+the consecutive number as output.  The corresponding {\em truth table} is available in Table. \ref{table:counter_decoder}.
+%\onecolumn
+\begin{table}[!h]
+\centering
+%\resizebox{\columnwidth}{!}
+%{
+\input{./tables/counter_decoder}
+%}
+\caption{Truth table for the incrementing decoder}
+\label{table:counter_decoder}
+\end{table}
+\item Using Boolean logic, outputs $A, B, C$ and $D$  in Table \ref{table:counter_decoder} can be expressed in terms of the inputs $W,X,Y,Z$ as
+%
+\begin{align}
+\label{eq:inc_A}
+A &= W^{\prime}X^{\prime}Y^{\prime}Z^{\prime} + W^{\prime}XY^{\prime}Z^{\prime}
++W^{\prime}X^{\prime}YZ^{\prime}
+\nonumber \\
+ & \quad +W^{\prime}XYZ^{\prime}
++W^{\prime}X^{\prime}Y^{\prime}Z
+\\
+\label{eq:inc_B}
+B &= WX^{\prime}Y^{\prime}Z^{\prime} + W^{\prime}XY^{\prime}Z^{\prime}
+\nonumber \\ 
+& \quad 
++WX^{\prime}YZ^{\prime}
++W^{\prime}XYZ^{\prime}
+\\
+\label{eq:inc_C}
+C &= WXY^{\prime}Z^{\prime} + W^{\prime}X^{\prime}YZ^{\prime}
+\nonumber \\ 
+& \quad 
++WX^{\prime}YZ^{\prime}
++W^{\prime}XYZ^{\prime}
+\\
+D &= WXYZ^{\prime} + W^{\prime}X^{\prime}Y^{\prime}Z
+\label{eq:inc_D}
+\end{align}
+\item Execute the following code for different input values to verify \eqref{eq:inc_A}-\eqref{eq:inc_D}.
+\label{code:inc_decode}
+\begin{lstlisting}
+codes/inc_decode.c
+\end{lstlisting}
+%\item Modify the above C code to verify \eqref{eq:inc_A}, \eqref{eq:inc_B}
+%and \eqref{eq:inc_C}.
+%
+%\item Repeat the exercise for the truth table in \ref{table:disp_dec}.
+%%
+%\begin{table}
+%\centering
+%\input{./tables/disp_dec.tex}
+%\caption{Truth table for display decoder.}
+%\label{table:disp_dec}
+%\end{table}
+
+\end{enumerate}
+%
+%

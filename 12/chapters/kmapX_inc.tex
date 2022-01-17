@@ -1,0 +1,43 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+
+\item Obtain the expression for $B$ using Fig. \ref{fig:inc_kmapX_B}
+
+
+\solution
+
+\begin{align}
+\label{eq:kmapX_inc_B}
+B=W^{\prime}X+WX^{\prime}Z^{\prime}
+\end{align}
+%
+where $\oplus$ denotes the XOR operation.
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/inc/kmapX/B.tex}
+}
+\caption{K-map for $B$.}
+\label{fig:inc_kmapX_B}
+\end{figure}
+%
+\item Obtain the expression for $C$ using Fig. \ref{fig:inc_kmapX_C}
+\begin{align}
+\label{eq:kmapX_inc_C}
+C = Y^{\prime}X+W^{\prime}XZ^{\prime}+YX^{\prime}
+\end{align}
+%
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/inc/kmapX/C.tex}
+}
+\caption{K-map for $C$.}
+\label{fig:inc_kmapX_C}
+\end{figure}
+\end{enumerate}

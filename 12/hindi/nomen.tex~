@@ -1,0 +1,46 @@
+%\addcontentsline{toc}{chapter}{Nomenclature}
+
+\nomenclature{Seven Segment Display}{ सप्तांश प्रदर्शी} 
+\nomenclature{Code}{ गूढ़} 
+\nomenclature{Decoder}{ गूढ़वाचक}
+\nomenclature{Incrementing}{ परवर्ती}
+\nomenclature{Karnaugh Map}{ कार्नो मानचित्र}
+\nomenclature{Implicant}{ विवक्षक}
+\nomenclature{LED}{ प्रकाश उत्सर्जक यंत्र}
+\nomenclature{Table}{ सारणी}
+\nomenclature{Figure}{ आकृति}
+\nomenclature{Variable}{ चर}
+\nomenclature{Input}{ आगत}
+\nomenclature{Output}{ निर्गत}
+\nomenclature{Boolean Algebra}{ बूलीय बीजगणित}
+\nomenclature{Verify}{ सत्यापित}
+\nomenclature{Combinational Logic}{ संयोजक तर्क}
+\nomenclature{Minimize}{ कनिष्ठीकरण}
+\nomenclature{Execute}{ निष्पादित}
+\nomenclature{Expression}{ व्यंजक}
+\nomenclature{Equation}{ समीकरण}
+\nomenclature{Axiom}{ अभिगृह}
+\nomenclature{Reduced}{ समानयनिक}
+\nomenclature{C Program}{ C क्रमादेश}
+\nomenclature{Binary}{ द्विआधारी}
+\nomenclature{Truth Table}{सत्य सारणी}
+\nomenclature{Derive}{व्युत्पन्न }
+\nomenclature{XOR}{अर्ध योग}
+\nomenclature{Complement}{पूरक}
+\nomenclature{Decade Counter}{दशक गणित्र}
+\nomenclature{Digital Logic}{अंकीय तर्क}
+\nomenclature{Function}{फलन}
+\nomenclature{Block Diagram}{खण्डारेख}
+\nomenclature{Circuit}{परिपथ}
+\nomenclature{Simplified Expression}{सरलीकृत व्यंजक}
+\nomenclature{Delay}{अतिकाल}
+\nomenclature{Synchronous}{तुल्यकालिक}
+\nomenclature{Finite State Machine}{परिमित अवस्था यंत्र}
+\nomenclature{State Transition Table}{अवस्थान्तरण सारणी}
+\nomenclature{Flip flop}{द्विविध}
+
+
+
+
+
+ 

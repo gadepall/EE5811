@@ -1,0 +1,42 @@
+%\subsection{Introduction}
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item  Fig. \ref{fig:sevenseg} shows a seven segment display with pins $a,b,c,d,e,f,g$.  Each of these pins is connected to an LED (light emitting device).
+
+\begin{figure}[!ht]
+\centering
+\resizebox {\columnwidth} {!} {
+\input{./figs/sevenseg.tex}
+}
+\caption{}
+\label{fig:sevenseg}
+\end{figure}
+
+\item Fig. \ref{fig:sevenseg12} shows how to generate the numbers on the display using Table
+\ref{table:arduioport}.  Complete Table \ref{table:arduioport} by drawing the figures for all numbers from 0-9.
+
+\begin{figure}[!h]
+\begin{center}
+\resizebox {\columnwidth} {!} {
+\input{./figs/sevenseg12.tex}
+}
+\end{center}
+\caption{}
+\label{fig:sevenseg12}
+\end{figure}
+
+
+\begin{table}[!h]
+\centering
+\input{./tables/arduinoport.tex}
+\caption{}
+\label{table:arduioport}
+\end{table}
+
+
+\end{enumerate}

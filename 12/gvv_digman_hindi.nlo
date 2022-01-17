@@ -1,0 +1,43 @@
+\nomenclatureentry{aSeven Segment Display@[{Seven Segment Display}]\begingroup  सप्तांश प्रदर्शी\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aCode@[{Code}]\begingroup  गूढ़\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aDecoder@[{Decoder}]\begingroup  गूढ़वाचक\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aIncrementing@[{Incrementing}]\begingroup  परवर्ती\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aDecrementing@[{Decrementing}]\begingroup  पूर्ववर्ती\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aKarnaugh Map@[{Karnaugh Map}]\begingroup  कार्नो मानचित्र\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aImplicant@[{Implicant}]\begingroup  विवक्षक\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aLED@[{LED}]\begingroup  प्रकाश उत्सर्जक यंत्र\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aTable@[{Table}]\begingroup  सारणी\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aFigure@[{Figure}]\begingroup  आकृति\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aVariable@[{Variable}]\begingroup  चर\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aInput@[{Input}]\begingroup  आगत\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aOutput@[{Output}]\begingroup  निर्गत\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aBoolean Algebra@[{Boolean Algebra}]\begingroup  बूलीय बीजगणित\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aVerify@[{Verify}]\begingroup  सत्यापित\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aCombinational Logic@[{Combinational Logic}]\begingroup  संयोजक तर्क\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aMinimize@[{Minimize}]\begingroup  कनिष्ठीकरण\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aExecute@[{Execute}]\begingroup  निष्पादित\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aExpression@[{Expression}]\begingroup  व्यंजक\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aEquation@[{Equation}]\begingroup  समीकरण\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aAxiom@[{Axiom}]\begingroup  अभिगृह\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aReduced@[{Reduced}]\begingroup  समानयनिक\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aC Program@[{C Program}]\begingroup  C क्रमादेश\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aBinary@[{Binary}]\begingroup  द्विआधारी\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aTruth Table@[{Truth Table}]\begingroup सत्य सारणी\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aDerive@[{Derive}]\begingroup व्युत्पन्न \nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aXOR@[{XOR}]\begingroup अर्ध योग\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aComplement@[{Complement}]\begingroup पूरक\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aDecade Counter@[{Decade Counter}]\begingroup दशक गणित्र\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aDigital Logic@[{Digital Logic}]\begingroup अंकीय तर्क\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aFunction@[{Function}]\begingroup फलन\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aBlock Diagram@[{Block Diagram}]\begingroup खण्डारेख\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aCircuit@[{Circuit}]\begingroup परिपथ\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aSimplified Expression@[{Simplified Expression}]\begingroup सरलीकृत व्यंजक\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aDelay@[{Delay}]\begingroup अतिकाल\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aSynchronous@[{Synchronous}]\begingroup तुल्यकालिक\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aFinite State Machine@[{Finite State Machine}]\begingroup परिमित अवस्था यंत्र\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aState Transition Table@[{State Transition Table}]\begingroup अवस्थान्तरण सारणी\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aFlip flop@[{Flip flop}]\begingroup द्विविध\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aDesign@[{Design}]\begingroup अभिकल्प\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aImplementation@[{Implementation}]\begingroup कार्यान्वयन\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aPeriod@[{Period}]\begingroup आवर्त\nomeqref {0.0.0}|nompageref}{1}
+\nomenclatureentry{aHardware@[{Hardware}]\begingroup यंत्रोपवस्तु\nomeqref {0.0.0}|nompageref}{1}

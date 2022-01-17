@@ -1,0 +1,16 @@
+
+\begin{karnaugh-map}[4][4][1][][]
+    \maxterms{0,2,3,5,6,8,10,11,12,13,14,15}
+    \minterms{1,4,7,9}
+    \implicantedge{1}{1}{9}{9}
+    \implicant{4}{4}
+    \implicant{7}{7}
+    
+    % note: position for start of \draw is (0, Y) where Y is
+    % the Y size(number of cells high) in this case Y=2
+    \draw[color=black, ultra thin] (0, 4) --
+    node [pos=0.7, above right, anchor=south west] {$BA$} % YOU CAN CHANGE NAME OF VAR HERE, THE $X$ IS USED FOR ITALICS
+    node [pos=0.7, below left, anchor=north east] {$DC$} % SAME FOR THIS
+    ++(135:1);
+        
+    \end{karnaugh-map}

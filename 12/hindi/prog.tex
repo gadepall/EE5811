@@ -1,0 +1,19 @@
+%\subsection{Introduction}
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item  Write a C program to obtain  
+the decimal equivalent truth table in Table \ref{table:counter_decoder}. Use a delay of 1 second.
+\label{code:inc_ctr_decimal}
+
+\item Modify the program in \ref{code:inc_ctr_decimal} by using the binary arithmetic in the 
+code writen 
+in Problem \ref{code:inc_decode}.
+
+
+
+\end{enumerate}

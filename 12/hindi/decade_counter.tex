@@ -1,0 +1,59 @@
+\subsection{प्रस्तावना}
+दशक गणित्र  एक  तुलयात्मक  परिपथ है जो अनुक्रम 0-9 की समान अतिकाल से निरन्तर   गणना करता है।  इसका खंड आरेख 
+आकृति. \ref{fig:dec_counter} में उपलब्ध है।  
+
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/decade/decade_counter_hindi}
+%\input{./figs/decade/decade_counter}
+}
+\caption{दशक गणित्र का खंड आरेख}
+\label{fig:dec_counter}
+\end{figure}
+%
+\subsection{परिमित अवस्था यंत्र}
+%
+\ref{fig:dec_counter} का परिमित अवस्था यंत्र आरेख आकृति. \ref{fig:fsm_counter} में उपलब्ध है।  $s_0$ वह अवस्था है जहां परवर्ती गूढ़वाचक का आगत मूल्य  0 है।  दशक गणित्र  की अवस्थान्तरण सारणी   \ref{table:counter_decoder}  में प्रस्तुत हैं।  इसमें वर्तमान अवस्था चर  का प्रबोधन  $W,X,Y,Z$ से है एवं आगामी अवस्था चर  $A,B,C,D$ द्वारा प्रबोधित है।
+\begin{figure}[!h]
+\centering
+\resizebox {\columnwidth} {!} {
+\input{./figs/decade/fsm_counter_hindi}
+}
+\caption{दशक गणित्र की अवस्थायें।}
+\label{fig:fsm_counter}
+\end{figure}
+%
+\subsection{परिमित अवस्था यंत्र के द्वारा दशक गणित्र का अभिकल्प}
+
+ आकृति. \ref{fig:dff} में D-द्विविध के व्यूह से दशक गणित्र का अभिकल्प उपलब्ध है।  यहाँ D-द्विविध आकृति \ref{fig:dec_counter} में अतिकाल खंड को  आकृति \ref{fig:dff} के परिपथ में कार्यान्वित करता है। D-द्विविध आगत मूल्य को घड़ी के आवर्त समय के पश्चात निर्गमन
+करता है।
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/decade/dff_hindi}
+}
+\caption{D-द्विविध द्वारा परिमित अवस्था यंत्र का कार्यान्वयन।}
+\label{fig:dff}
+\end{figure}
+%
+आकृति \ref{fig:dff} में यंत्रोपवस्तु मूल्य  सारणी \ref{table:fsm_counter} में प्रदत्त है।
+\begin{table}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./tables/flip_flop_hindi}
+}
+\caption{यंत्रोपवस्तु मूल्य।}
+\label{table:fsm_counter}
+\end{table}
+
+उपरोक्त विधान से पूर्ववर्ती गूढ़वाचक का अभिकल्प करें।
+
+%\begin{equation}
+%\text{No. of D Flip-Flops} = \ceil{\log_{2}\brak{\text{No. of States}}}
+%\end{equation}
+%For the FSM in Fig. \ref{fig:fsm_counter}, the number of states is 9, hence the number flipflops required = 4.  
+%\begin{problem}
+%Design a decade down counter (counts from 9 to 0 repeatedly) using an FSM.  
+%\end{problem}
+
+\end{document}
+
+

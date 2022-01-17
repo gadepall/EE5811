@@ -1,0 +1,160 @@
+निम्न  चरणों में सारणी \ref{table:disp_dec}  एवं के-मानचित्र के द्वारा $a,b,c,d,e,f,g$ के न्यूनतम व्यंजक को व्युत्पन्न किया जाएगा.
+
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item आकृति \ref{fig:disp_kmap_a} के द्वारा $a$ के व्यंजक को व्युत्पन्न करें.
+
+
+\solution
+
+\begin{align}
+\label{eq:kmap_disp_a}
+a &= A B^{\prime}C^{\prime} D^{\prime} + A^{\prime}B^{\prime} C D^{\prime}
+\\
+&= B^{\prime}D^{\prime}\brak{A C^{\prime}+ A^{\prime}C}
+\\
+&=B^{\prime}D^{\prime}\brak{A \oplus  C}
+\end{align}
+%
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/disp/kmap/a.tex}
+}
+\caption{$a$ का क-मानचित्र.}
+\label{fig:disp_kmap_a}
+\end{figure}
+%
+$\oplus$ संक्रिया की परिभाषा सारणी \ref{table:xor}  में उपलब्ध     है.
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+$A$ & $C$ & $A\oplus C$ \\ \hline
+0   & 0   & 0          \\ \hline
+0   & 1   & 1          \\ \hline
+1   & 0   & 1          \\ \hline
+1   & 1   & 0          \\ \hline
+\end{tabular}
+\caption{$\oplus$ की परिभाषा.}
+\label{table:xor}
+\end{table}
+
+\item आकृति \ref{fig:disp_kmap_b} के द्वारा $b$ के व्यंजक को व्युत्पन्न करें.
+
+
+\solution
+
+\begin{align}
+\label{eq:kmap_disp_b}
+b &= A B^{\prime}C D^{\prime} + A^{\prime}B C D^{\prime}
+\\
+&=C D^{\prime}\brak{A \oplus B}
+\end{align}
+%
+
+
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/disp/kmap/b.tex}
+}
+\caption{$b$ का क-मानचित्र।}
+\label{fig:disp_kmap_b}
+\end{figure}
+%
+\item आकृति \ref{fig:disp_kmap_c} के द्वारा $c$ के व्यंजक को व्युत्पन्न करें।
+
+
+\solution
+
+\begin{align}
+\label{eq:kmap_disp_c}
+c &=  A^{\prime}B C^{\prime} D^{\prime}
+\end{align}
+%
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/disp/kmap/c.tex}
+}
+\caption{$c$ का क-मानचित्र।}
+\label{fig:disp_kmap_c}
+\end{figure}
+%
+\item  आकृति \ref{fig:disp_kmap_d} के द्वारा $d$ के व्यंजक को व्युत्पन्न करें।
+\\
+\solution
+
+
+\begin{align}
+\label{eq:kmap_disp_d}
+d=AB^{\prime}C^{\prime}+A^{\prime}B^{\prime}CD^{\prime}+ABCD^{\prime}
+\end{align}
+%
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/disp/kmap/d.tex}
+}
+\caption{$d$ का क-मानचित्र।}
+\label{fig:disp_kmap_d}
+\end{figure}
+\item आकृति \ref{fig:disp_kmap_e} के द्वारा $e$ के व्यंजक को व्युत्पन्न करें।
+%
+
+\begin{align}
+\label{eq:kmap_disp_e}
+e=AD^{\prime}+B^{\prime}CD^{\prime}+AB^{\prime}C^{\prime}
+\end{align}
+%
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/disp/kmap/e.tex}
+}
+\caption{$e$ का क-मानचित्र।}
+\label{fig:disp_kmap_e}
+\end{figure}
+%
+\item आकृति \ref{fig:disp_kmap_f} के द्वारा $f$ के व्यंजक को व्युत्पन्न करें।
+%
+\begin{align}
+\label{eq:kmap_disp_f}
+f= BC^{\prime}D^{\prime} + AB^{\prime}C^{\prime}D^{\prime} + AB^{\prime}CD
+\end{align}
+%
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/disp/kmap/f.tex}
+}
+\caption{$f$ का क-मानचित्र।}
+\label{fig:disp_kmap_f}
+\end{figure}
+
+%
+\item आकृति \ref{fig:disp_kmap_g} के द्वारा $g$ के व्यंजक को व्युत्पन्न करें।
+%
+\begin{align}
+\label{eq:kmap_disp_g}
+g = B^{\prime}C^{\prime}D^{\prime}+ABCD^{\prime}
+\end{align}
+%
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/disp/kmap/g.tex}
+}
+\caption{$g$ का क-मानचित्र।}
+\label{fig:disp_kmap_g}
+\end{figure}
+\end{enumerate}
+%
+%

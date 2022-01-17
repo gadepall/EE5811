@@ -1,0 +1,23 @@
+\begin{circuitikz}  \draw
+(0,2) node[nand port] (mynand1) {}
+(3,0) node[nand port] (mynand2) {}
+(0,0) node[american nand port](A){}
+(-5,2.3) to [short,-*](-3,2.27)
+(-5,1.73) to [short,-*](-4,1.73)
+(-3,2.27)-|(mynand1.in 1)
+(-4,1.73)-|(mynand1.in 2)
+(-3,2.27) --(-3,0.277)-|(A.in 1)
+(-4,1.7)--(-4,-0.277)-|(A.in 2)
+(0,0)--(1.9,0)
+(0.2,2)--(0.2,0.277)-|(mynand2.in 1)
+(-5,-1)--(1.6,-1)-|(mynand2.in 2)
+(-3,0.277) to [short] (-3,0.277)(-3,1.73) to [crossing](-3,1.73) ;
+
+\node at (A.bin 1) [ocirc, left]{} ;
+\node at (A.bin 2) [ocirc, left]{} ;
+\node[left]at(-5,2.3){$C$};
+\node[left]at(-5,1.7){$D$};
+\node[right]at(3.5,0){$b$};
+\node[left]at(-5,-1){$B$};
+
+\end{circuitikz}

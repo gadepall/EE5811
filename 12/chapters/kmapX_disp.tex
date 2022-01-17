@@ -1,0 +1,27 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item Obtain the expression for $b$ using Fig. \ref{fig:disp_kmapX_b}
+%
+\solution
+\begin{align}
+\label{eq:kmap_dispX_b}
+b=B^{\prime}+CD+C^{\prime}D^{\prime}
+\end{align}
+%
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/disp/kmapX/b.tex}
+}
+\caption{K-map for $b$ using don't care.}
+\label{fig:disp_kmapX_b}
+\end{figure}
+
+%
+\end{enumerate}
+%

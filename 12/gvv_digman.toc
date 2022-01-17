@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Seven Segment Display}{1}{section.1}%
+\contentsline {section}{\numberline {2}Incrementing Decoder}{1}{section.2}%
+\contentsline {section}{\numberline {3}Display Decoder}{2}{section.3}%
+\contentsline {section}{\numberline {4}Karnaugh Map}{2}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Incrementing Decoder}{2}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Display Decoder}{4}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Don't Care}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Incrementing Decoder}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Display Decoder}{5}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Programming}{6}{section.6}%
+\contentsline {section}{\numberline {7}Logic Gates}{6}{section.7}%
+\contentsline {section}{\numberline {8}Product of Sums}{6}{section.8}%

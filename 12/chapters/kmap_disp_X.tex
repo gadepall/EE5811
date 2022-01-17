@@ -1,0 +1,33 @@
+Use K-maps to obtain the minimized expressions 
+for $a,b,c,d,e,f,g$ in terms of $A,B,C,D$ in Table \ref{table:disp_dec} 
+with don't care conditions.
+
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item Obtain the expression for $b$ using Fig. \ref{fig:disp_kmap_b}
+
+
+\solution
+
+\begin{align}
+\label{eq:kmapX_inc_B}
+B=W'X+WX'Z'
+\end{align}
+%
+where $\oplus$ denotes the XOR operation.
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!} {
+\input{figs/inc/kmapX/B.tex}
+}
+\caption{K-map for $b$.}
+\label{fig:inc_kmapX_B}
+\end{figure}
+\end{enumerate}
+%
+%

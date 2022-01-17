@@ -1,0 +1,41 @@
+%\subsection{Introduction}
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item  आकृति \ref{fig:sevenseg} में एक सप्तांश   प्रदर्शी प्रस्तुत है जिसमें कुश  $a,b,c,d,e,f,g$ हैं ।  प्रत्येक कुश का संपर्क एक प्रकाश उत्सर्जक यंत्र के साथ है ।
+
+\begin{figure}[!ht]
+\centering
+\resizebox {\columnwidth} {!} {
+\input{./figs/sevenseg.tex}
+}
+\caption{}
+\label{fig:sevenseg}
+\end{figure}
+
+\item आकृति \ref{fig:sevenseg12} सारणी \ref{table:arduioport} के माध्यम से  प्रदर्शी पर अंको को दर्शाता हैे । 0-9 तक सारे अंको को रेखांकित कर सारणी \ref{table:arduioport}  को पूर्ण करें ।
+
+\begin{figure}[!h]
+\begin{center}
+\resizebox {\columnwidth} {!} {
+\input{./figs/sevenseg12.tex}
+}
+\end{center}
+\caption{}
+\label{fig:sevenseg12}
+\end{figure}
+
+
+\begin{table}[!h]
+\centering
+\input{./tables/arduinoport.tex}
+\caption{}
+\label{table:arduioport}
+\end{table}
+
+
+\end{enumerate}

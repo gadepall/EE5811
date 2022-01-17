@@ -1,0 +1,119 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item K-Map for $A$: 
+The expression in \eqref{eq:inc_A}  can be minimized using the K-map in Fig. \ref{fig:kmap_A}.
+In Fig. \ref{fig:kmap_A},  the {\em implicants} in boxes 0,2,4,6 result in $W^{\prime}Z^{\prime}$.  The implicants in
+boxes 0,8 result in $W^{\prime}X^{\prime}Y^{\prime}$.  Thus, after minimization using Fig. \ref{eq:kmap_A},  \eqref{eq:inc_A} can be expressed as
+%
+\begin{equation}
+\label{eq:kmap_A}
+A = W^{\prime}Z^{\prime}+W^{\prime}X^{\prime}Y^{\prime}
+\end{equation}
+%
+Using the fact that
+\begin{align}
+\label{eq:inc_Boolean}
+\begin{split}
+X+X^{\prime} &= 1
+\\
+XX^{\prime} &= 0,
+\end{split}
+\end{align}
+%
+derive \eqref{eq:kmap_A} from \eqref{eq:inc_A} algebraically.
+%
+%
+%
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/kmap_A}
+}
+\caption{K-map for $A$.}
+\label{fig:kmap_A}
+\end{figure}
+
+\item K-Map for $B$:
+From Table \ref{table:counter_decoder}, using boolean logic,
+%
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/kmap_B}
+}
+\caption{K-map for $B$.}
+\label{fig:kmap_B}
+\end{figure}
+%
+Show that \eqref{eq:inc_B} can be reduced to
+\begin{equation}
+\label{eq:kmap_B}
+B = WX^{\prime}Z^{\prime} + W^{\prime}XZ^{\prime}
+\end{equation}
+using Fig. \ref{fig:kmap_B}.
+\item Derive \eqref{eq:kmap_B} from \eqref{eq:inc_B} algebraically using \eqref{eq:inc_Boolean}.
+%
+%
+\item {K-Map for $C$: }
+From Table \ref{table:counter_decoder}, using boolean logic,
+%
+%
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/kmap_C}
+}
+\caption{K-map for $C$.}
+\label{fig:kmap_C}
+\end{figure}
+%
+Show that \eqref{eq:inc_C} can be reduced to
+\begin{equation}
+\label{eq:kmap_C}
+C = WXY^{\prime}Z^{\prime}  +  X^{\prime}YZ^{\prime} + W^{\prime}YZ^{\prime}
+\end{equation}
+using Fig. \ref{fig:kmap_C}.
+%
+\item 
+Derive \eqref{eq:kmap_C} from \eqref{eq:inc_C} algebraically using \eqref{eq:inc_Boolean}.
+%
+\item {K-Map for $D$: }
+From Table \ref{table:counter_decoder}, using boolean logic,
+\begin{equation}
+\label{eq:D}
+D = WXYZ^{\prime} + W^{\prime}X^{\prime}Y^{\prime}Z
+\end{equation}
+%
+\begin{figure}[!h]
+\resizebox {\columnwidth} {!} {
+\input{./figs/kmap_D}
+}
+\caption{K-map for $D$.}
+\label{fig:kmap_D}
+\end{figure}
+%
+\item 
+Minimize \eqref{eq:D} using Fig. \ref{fig:kmap_D}.
+%
+\item Modify your C program to verify the 
+%Download the code in
+%\begin{lstlisting}
+%wget https://raw.githubusercontent.com/gadepall/arduino/master/7447/codes/inc_dec/inc_dec.ino
+%\end{lstlisting}
+%
+%and modify it using 
+the K-Map equations for A,B,C and D in \eqref{eq:kmap_A}, \eqref{eq:kmap_A}, \eqref{eq:kmap_A}
+and \eqref{eq:kmap_A} respectively.
+%Execute and verify.
+\item Revise by using don't care conditions and verify through a C code.
+%\item {Display Decoder:}
+%%is the truth table for the display decoder in Fig. \ref{fig:dec_counter}.  
+%Use K-maps to obtain the minimized expressions for $a,b,c,d,e,f,g$ in terms of $A,B,C,D$ in Table \ref{table:disp_dec} 
+%with and without don't care conditions.
+%%
+%\input{./figs/disp_dec}
+\end{enumerate}
+%
+%
