@@ -36,4 +36,7 @@ https://github.com/gadepall/arduino/tree/master/assembly
 7.  Vaman
 https://github.com/gadepall/vaman
 
+8. Instruction for Linking WSL Ubuntu and USB
+https://github.com/gadepall/EE5811/blob/main/WSL-USB/Instruction_for_Linking_WSL_Ubuntu_and_USB
+
 
